@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <style>
+        .mail_temp,
+        .mail_logo,
+        .mail_cont {
+            float: left;
+            width: 100%;
+            text-align: center;
+        }
+
+        .mail_logo img {
+            max-width: 15%;
+        }
+
+        .title {
+            float: left;
+            width: 100%;
+            margin: 20px 0 0 0;
+            font-family: Roboto;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 45px;
+            color: #000;
+            text-align: left;
+        }
+
+        .disc {
+            float: left;
+            width: 100%;
+            margin: 0;
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 45px;
+            color: #000;
+            text-align: left;
+        }
+
+        .mail_footer {
+            float: left;
+            width: 100%;
+        }
+
+        .mail_cont h3 {
+            float: left;
+            width: 100%;
+            font-size: 28px;
+            text-align: left;
+            margin: 10px 0;
+        }
+
+        .mail_footer p {
+            float: left;
+            width: 100%;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 400;
+            color: #000;
+            text-align: left;
+            margin: 0
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mail_temp">
+        <div class="mail_logo">
+            <img src="https://lms-admin-portal.s3.us-east-2.amazonaws.com/static/media/logo.860ae858aaa37546e401.png" />
+        </div>
+        <div class="mail_cont">
+            <h2 class="title">
+                <%=title%>
+            </h2>
+            <p class="disc"> <%=disc%></p>
+            <h3><strong>
+                    <%=otp%>
+                </strong></h3>
+            <p class="disc">If you didn’t request this, you can ignore this email.</p>
+            <div class="mail_footer">
+                <p>Thanks,<br />The LMS team</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
